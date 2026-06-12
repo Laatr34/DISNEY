@@ -1,0 +1,71 @@
+[
+  {
+    "date": 2026,
+    "img": "historic_2026.png",
+    "src": {
+      "name": "Editor And Publisher",
+      "link": "https://www.editorandpublisher.com/stories/new-disney-ceo-gives-vision-for-company-as-revenue-rises,261504"
+    },
+    "p": "Le nouveau PDG de Disney présente sa vision pour l’entreprise alors que les revenus augmentent"
+  },
+
+  {
+    "date": 2025,
+    "img": "historic_2025.png",
+    "src": {
+      "name": "tomsguide",
+      "link": "https://www.tomsguide.com/entertainment/disney-plus/disney-is-finally-merging-your-hulu-profile-into-the-streaming-service-heres-what-you-need-to-know"
+    },
+    "p": "Disney+ fusionne enfin les profils Hulu dans sa plateforme"
+  },
+
+  {
+    "date": 2023,
+    "img": "historic_2023.jpg",
+    "src": {
+      "name": "The Walt Disney Company",
+      "link": "https://thewaltdisneycompany.com/news/the-walt-disney-company-creates-international-content-group-to-expand-pipeline-of-local-content-and-continue-to-grow-its-global-direct-to-consumer-business/"
+    },
+    "p": "Disney crée un groupe de contenu international pour développer des productions locales et renforcer son service de streaming mondial"
+  },
+
+  {
+    "date": 2019,
+    "img": "historic_2019.png",
+    "src": {
+      "name": "The Walt Disney Company",
+      "link": "https://thewaltdisneycompany.com/news/disneys-acquisition-of-21st-century-fox-will-bring-an-unprecedented-collection-of-content-and-talent-to-consumers-around-the-world/"
+    },
+    "p": "Le rachat de 21st Century Fox par Disney apporte une collection de contenus et de talents sans précédent à l’échelle mondiale"
+  },
+
+  {
+    "date": 1984,
+    "img": "historic_1984.jpg",
+    "src": {
+      "name": "CEO At Work",
+      "link": "https://www.ceo-at-work.com/blog/limpact-de-michael-eisner-sur-levolution-de-disney"
+    },
+    "p": "L’ère Eisner et la renaissance des studios Disney"
+  },
+
+  {
+    "date": 1955,
+    "img": "historic_1955.jpg",
+    "src": {
+      "name": "Chronique Disney",
+      "link": "https://www.chroniquedisney.fr/dossier/2020-fermetures-parcs-disney.htm"
+    },
+    "p": "Ouverture du tout premier parc Disneyland il y a 70 ans"
+  },
+
+  {
+    "date": 1923,
+    "img": "historic_1923.webp",
+    "src": {
+      "name": "Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Acquisition_of_21st_Century_Fox_by_Disney"
+    },
+    "p": "Création de Disney à Hollywood"
+  }
+]

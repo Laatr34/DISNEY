@@ -1,0 +1,152 @@
+@media screen and (max-width: 1000px) {
+  ._a_propos {
+    flex-direction: column;
+
+    ._propos {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: auto;
+
+      .button_redirecting {
+        height: auto;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  ._historic {
+    & ._historic_section {
+      ul {
+        gap: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 974px) {
+  ._hero_sections {
+    background-size: auto;
+  }
+
+  ._historic {
+    ._historic_section {
+      ul {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        li {
+          font-size: 18px;
+        }
+      }
+
+      ._historic_details {
+        height: 90vh;
+
+        .historic_element {
+          align-items: center;
+          flex-direction: column;
+
+          img {
+            width: 640px;
+            object-fit: cover;
+            height: 360px;
+          }
+
+          p {
+            max-width: 80%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  ._parc_section {
+    ._parc_container {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  ._hero_sections {
+    ._project_titles {
+      font-size: 2.5rem;
+    }
+  }
+
+  ._historic {
+    ._historic_section {
+      ul {
+        li {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 741px) {
+  ._nav_bars {
+    ul {
+      display: none;
+    }
+
+    ._other_navigations {
+      display: none;
+    }
+  }
+
+  .burger_main {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  ._a_propos {
+    gap: 8px;
+
+    ._propos {
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .summ_div {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  ._historic {
+    ._transition_box {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  ._historic {
+    ._historic_section {
+      ._historic_details {
+        .historic_element {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  ._parc_section {
+    ._parc_container {
+      padding: 0 1rem;
+      grid-template-columns: 1fr;
+    }
+  }
+}
