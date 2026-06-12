@@ -98,6 +98,10 @@
     }
   }
 
+  ._a_propos {
+    padding: 5rem 3rem;
+  }
+
   .burger_main {
     display: block;
   }

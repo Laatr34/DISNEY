@@ -59,6 +59,7 @@ body {
   z-index: 100;
   position: fixed;
   top: 0;
+  height: 87.43px;
   left: 0;
   width: 100%;
   background: linear-gradient(to bottom, #e1e1e167 2%, transparent);
@@ -225,8 +226,9 @@ body {
   display: grid;
   grid-template-rows: 80px 1fr 48px;
   z-index: 1000;
-  background-color: var(--color-body-bg);
-  background-image: url(./img/group_stars.png);
+  background-color: #dfdfdfc3;
+  backdrop-filter: blur(3px);
+  /* background-image: url(./img/group_stars.png); */
   transform: translateX(100%);
   transition: 0.3s ease-in-out;
 
@@ -306,11 +308,20 @@ body {
   background-attachment: fixed;
   background-position-y: -90px;
   background-position-x: center;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to top, #00000050, transparent);
+  }
 
   h1 {
     font-family: var(--font-disney);
@@ -348,15 +359,19 @@ body {
   }
 }
 
+.star_background {
+  background-image: url(./img/sky_stars.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 ._a_propos {
-  box-shadow: 0 -20px 12px #0000007a;
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 5rem;
   padding: 5rem;
-  background-image:
-    linear-gradient(135deg, #fff 70%, transparent), url(./img/sky_stars.jpeg);
   position: relative;
 
   .summ_div {
@@ -405,17 +420,6 @@ body {
     &:hover::before {
       content: "Disney+";
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    z-index: 3;
-    height: 80px;
-    background: linear-gradient(to top, #fff 20%, transparent);
   }
 }
 
@@ -694,6 +698,7 @@ body {
         border: 1px solid var(--color-black-hard-text);
         overflow: hidden;
         width: 300px;
+        background-color: var(--color-body-bg);
         height: 455px;
         display: grid;
 
@@ -936,4 +941,85 @@ body {
 .true .to-top {
   transform: translate(0) scale(1);
   opacity: 1;
+}
+
+footer {
+  background-color: var(--color-body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+
+  ._following_sections {
+    h4 {
+      font-size: 16px;
+      font-family: var(--font-poppins);
+      color: var(--color-black-text);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      li {
+        position: relative;
+
+        a {
+          &::before {
+            content: "";
+            width: 60%;
+            position: absolute;
+            height: 2px;
+            background-color: var(--color-black-hard-text);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.3s var(--transition-value);
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .logo_img {
+    width: 150px;
+    height: auto;
+  }
+
+  ._other_links_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+
+    a {
+      color: var(--color-black-text);
+      transition: 0.3s ease-in-out;
+      font-family: var(--font-inter);
+      font-size: 14px;
+
+      &:hover {
+        color: var(--color-black-hard-text);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .copy_right {
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--font-inter);
+    color: var(--color-black-text);
+  }
 }

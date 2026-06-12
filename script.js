@@ -232,7 +232,7 @@ function charge_historic() {
         historic_html = historic_html.concat(`
           <div class="historic_element ${specific_class}">
             <img
-              src="./img/${img}"
+              src="${img}"
               alt="Image historique du ${date}"
               class="_representation_img to-right"
             />
