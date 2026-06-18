@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DISNEY</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive_design.css" />
+    <link rel="shortcut icon" href="./img/disney_logo.png" />
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
         </ul>
 
         <div class="_other_navigations">
-          <a href="#" class="_contact_us"><span>Nous contacter</span></a>
+          <a href="#contact" class="_contact_us"><span>Nous contacter</span></a>
         </div>
 
         <button class="burger_main">
@@ -160,6 +161,51 @@
             impressionnantes et l’expérience unique qu’il offre aux visiteurs.
           </p>
           <span class="parc_locate">Tokio</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="_contact_section">
+      <div class="_contact_container">
+        <img
+          src="https://i.pinimg.com/1200x/a5/89/25/a589253c3cf5da427d141b59ad978f90.jpg"
+          alt=""
+          class="_logo_disney"
+        />
+
+        <div class="_contact_summary">
+          <h1>Contactez-nous</h1>
+
+          <p>
+            Une question, une suggestion ou une remarque ? Nous serons ravis de
+            vous lire.
+          </p>
+
+          <form method="post" action="traitement.php" class="_contact_form">
+            <div class="input_div">
+              <label for="user_name">Votre nom : </label>
+              <input type="text" name="user_name" id="user_name" />
+            </div>
+
+            <div class="input_div">
+              <label for="user_mail">Votre email : </label>
+              <input type="email" name="user_mail" id="user_mail" />
+            </div>
+
+            <div class="input_div">
+              <label for="user_message">Votre message : </label>
+              <textarea
+                name="user_message"
+                rows="2"
+                id="user_message"
+              ></textarea>
+            </div>
+
+            <div class="btn_div">
+              <button type="submit">Envoyer</button>
+              <button type="reset">Annuler</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
