@@ -334,6 +334,7 @@ body {
     font-family: var(--font-poppins);
     font-weight: 800;
     line-height: 1;
+    text-align: center;
     color: var(--color-white-hard-text);
     transition-delay: 0.2s;
   }
@@ -369,9 +370,8 @@ body {
 ._a_propos {
   display: flex;
   justify-content: center;
-  align-items: start;
-  gap: 5rem;
   padding: 5rem;
+  gap: 4rem;
   position: relative;
 
   .summ_div {
@@ -664,7 +664,6 @@ body {
 
   ._card_container {
     display: flex;
-    justify-content: start;
     align-items: center;
     gap: 3rem;
     position: relative;
@@ -941,6 +940,110 @@ body {
 .true .to-top {
   transform: translate(0) scale(1);
   opacity: 1;
+}
+
+._contact_section {
+  background-image: url(./img/sky_stars.jpeg);
+  background-size: cover;
+  height: calc(100vh - 87.43px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+
+  ._contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    background-color: var(--color-body-bg);
+    height: 450px;
+    border: 1px solid var(--color-black-text);
+    border-radius: 8px;
+
+    img {
+      width: 450px;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 -100px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    ._contact_summary {
+      display: flex;
+      width: 450px;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+      h1 {
+        font-family: var(--font-inter);
+        color: var(--color-black-hard-text);
+        font-size: 32px;
+        line-height: 1.8rem;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        color: var(--color-black-text);
+        font-size: 14px;
+      }
+
+      ._contact_form {
+        .input_div {
+          margin-top: 12px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          label {
+            font-size: 14px;
+            font-family: var(--font-inter);
+            font-weight: 300;
+          }
+
+          input,
+          textarea {
+            padding: 8px 0;
+            color: var(--color-black-hard-text);
+            font-size: 16px;
+            font-family: var(--font-inter);
+            display: block;
+            width: 100%;
+            resize: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid var(--color-black-hard-text);
+          }
+        }
+
+        .btn_div {
+          margin-top: 12px;
+          button {
+            background-color: #00013e;
+            font-size: 16px;
+            color: var(--color-white-hard-text);
+            border: none;
+            padding: 8px;
+            font-family: var(--font-inter);
+            margin-bottom: 8px;
+            width: 100%;
+            border-radius: 0.4rem;
+            font-weight: 600;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 footer {
