@@ -62,6 +62,21 @@
     }
   }
 
+  ._contact_section {
+    ._contact_container {
+      border: none;
+
+      img {
+        display: none;
+      }
+
+      ._contact_summary {
+        width: auto;
+        max-width: 450px;
+      }
+    }
+  }
+
   ._parc_section {
     ._parc_container {
       padding: 0 1rem;
